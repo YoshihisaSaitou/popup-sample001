@@ -1,6 +1,4 @@
 $(function(){
-var popup_flg = 0;
-
 function popup_scroll_top(){
     let scroll_top = $(window).scrollTop() + 300;
     return scroll_top;
@@ -13,7 +11,6 @@ function reset_data(){
 }
 
 $('.yn_btn').click(function(){
-    popup_flg = 2;
     let id = $(this).attr('data-id');
     let url = $(this).attr('data-url');
     let text = $(this).attr('data-text');
@@ -57,15 +54,7 @@ $('#popup_n_btn').click(function(){
 
 $('#popup_background').click(function(){
     reset_data();
-    if(popup_flg == 1){
-        $('#left_area').hide(500);
-    }else if(popup_flg == 2){
-        $('#popup_yn').hide(500);
-    }else if(popup_flg == 3){
-        $('#popup_content').hide(500);
-    }else if(popup_flg == 4){
-        $('#popup_download').hide(500);
-    }
+    $('#popup_yn').hide(500);
     $('#popup_background').hide();
 });
 

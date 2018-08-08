@@ -2,10 +2,10 @@
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Bitnami: Open Source. Simplified</title>
-<link media="all" rel="stylesheet" type="text/css" href="css/popup_sample001.css?zzza" />
+<title></title>
+<link media="all" rel="stylesheet" type="text/css" href="css/popup_sample001.css" />
 <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/popup_sample001.js?zzza"></script>
+<script type="text/javascript" src="js/popup_sample001.js"></script>
 </head>
 <body>
 <div id="popup_yn">
@@ -18,9 +18,12 @@
 </div>
 <div id="popup_background"></div>
 <div id="main">
-    <div>data-id="APIに渡すID"</div>
-    <div>data-url="APIのURL"</div>
-    <input data-id="" data-url="" data-text="実行しますか？" class="yn_btn" type="button" value="はい／いいえボタン" />
+    <div>class="yn_btn"</div>
+    <div>data-text="ポップアップに表示する文言"</div>
+    <div>data-id="サーバーサイドに送信するID"</div>
+    <div>data-url="サーバーサイドのURL"</div>
+    <div>設置例</div>
+    <input class="yn_btn" data-text="削除を実行しますか？" type="button" data-id="1" data-url="/admin/delete" value="削除" />
 </div>
 </body>
 </html>
