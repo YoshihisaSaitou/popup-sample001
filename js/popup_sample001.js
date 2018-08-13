@@ -33,6 +33,9 @@ $('#popup_y_btn').click(function(){
     let action_id = $('body').data('action_id');
     let action_url = $('body').data('action_url');
     let action_flg = $('body').data('action_flg');
+    
+    $('#loading').show();
+    
     if(action_flg == 1){
         $.ajax({
             type:'post',
@@ -40,9 +43,12 @@ $('#popup_y_btn').click(function(){
             data:{id:action_id},
             dataType:'json'
         }).done(function(data){
+            reset_data();
             window.location.href = data.callback_url;
         }).fail(function(data){
             $('#popup_yn_notice').text('処理に失敗しました。');
+        }).always(function(data){
+            $('#loading').hide();
         });
     }
 });
