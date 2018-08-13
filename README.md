@@ -17,7 +17,7 @@ js/popup_sample001.js<br />
     &lt;/div&gt;<br />
 &lt;/div&gt;<br />
 &lt;div id="popup_background"&gt;&lt;/div&gt;<br />
-&lt;/pre&gt;<br />
+&lt;div id="loading"&gt;&lt;img src="img/loading.gif" /&gt;&lt;div class="background"&gt;&lt;/div&gt;&lt;/div&gt;<br />
 <br />
 適用するタグに下記を記述します。<br />
 class="yn_btn"<br />
